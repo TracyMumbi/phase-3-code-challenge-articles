@@ -15,13 +15,13 @@ class Magazine
         @@all 
     end
     def contributors
-        Article.all.filter{|article| article.magazine == @name}.map{|var| var.author}
+        Article.all.filter{|article| article.magazine == self}.map{|var| var.author}
     end
     def find_by_name (name)
         Magazine.all.find{|magazine| magazine.name == name}
     end
     def  article_titles
-        Article.all.filter{|article| article.magazine == @name}.map{|var| var.title}
+        Article.all.filter{|article| article.magazine == self}.map{|var| var.title}
     end
     def contributing_authors
         # filter  and tally

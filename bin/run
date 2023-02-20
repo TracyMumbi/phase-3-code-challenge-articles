@@ -12,9 +12,9 @@ nation = Magazine.new("nation", "Handout")
 star = Magazine.new("star", "Magazine")
 strikas = Magazine.new("strikas", "Handout")
 
-article = Article.new("Ken", "Standard", "Valentines")
-article1 = Article.new("Davi", "nation", "Think like a man")
-article2 = Article.new("Ken", "star", "Reasons")
-article3 = Article.new("Davi", "strikas", "God is here")
+article = Article.new("Ken", standard, "Valentines")
+article1 = Article.new("Davi", nation, "Think like a man")
+article2 = Article.new("Ken", star, "Reasons")
+article3 = Article.new("Davi", strikas, "God is here")
 
 binding.pry
